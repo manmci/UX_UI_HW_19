@@ -243,13 +243,27 @@ button:active {
         top: 55px;
     }
     #about .container {
-        margin-top: 0px !important;
-        outline: 1px dashed tomato;
+        margin-top: 15px !important;
+    }
+    #about .aboutBlurb {
+        background-color: rgba(19, 7, 23, 0.3);
+        z-index: 10;
+        grid-row: 5 / 8;
+        grid-column: 1 / 5;
+    }
+    #about .heroImg {
+        grid-row: 1 / 6;
+        grid-column: 1 / 5;
+        background-position: center;
     }
     #illus {
         display: none; /* temporary */
     }
 
+    /* Mobile Typography */
+    p {
+        font-size: 10pt;
+    }
 
     /* Mobile Menu */
     .menuContainer {
@@ -262,7 +276,7 @@ button:active {
         z-index: 100;
     }
     .up {
-        height: 75px;
+        height: 50px;
     }
     .down {
         height: 100vh;
@@ -271,7 +285,6 @@ button:active {
         display: none;
     }
     .menu {
-      /* outline: 1px solid orange; */
         margin: 0 auto;
         max-width: 600px;
         color: #40D3E6;
@@ -281,7 +294,6 @@ button:active {
         height: 90%;
     }
     .menuBottom {
-    /*   outline: 1px solid red; */
         background-image: url(../img/menu_nubbin.png);
         margin: 0 auto;
         width: 250px;
@@ -296,6 +308,7 @@ button:active {
         margin: 0;
         padding: 0;
         text-align: right;
+        font-family: 'Space Mono';
     }
     .menu li {
         font-size: 24pt;
@@ -303,7 +316,6 @@ button:active {
         padding: 0px 5px;
     }
     .chevron {
-        outline: 1px dashed orange;
         position: absolute;
         width: 30px;
         height: 35px;
@@ -314,13 +326,15 @@ button:active {
         cursor: pointer;
     }
     .default {
-        top: 78%;
+        top: 77%;
     }
     .dropped {
-        top: 89%;
-        transform: rotate(180deg);
+        top: 88%;
     }
 }
 
+/* XL */
 
-/* top: 89%; */
+/* @media only screen and (min-width:1440px) {
+    scream: like the dickens;
+} */
