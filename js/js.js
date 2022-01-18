@@ -1,5 +1,4 @@
 $(".chevron").on("click", function(){
-    // $(".menuContainer").toggleClass("down");
     if ($(".menuContainer").hasClass("up")) {
         $(".menuContainer").removeClass("up").addClass("down");
         $("h2").removeClass("off");
