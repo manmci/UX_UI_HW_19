@@ -216,20 +216,15 @@ button:active {
 /* Mobile */
 
 @media only screen and (max-width:600px) {
-    /* header {
-        background-color: unset;
-        height: 90vh;
-        width: 100%;
-        background-image: url(../img/menu.png);
-        background-position: bottom;
-        background-size: cover;
-    } */
     nav {
         display: none;
     }
     body {
         margin: 0;
         padding: 0;
+    }
+    header {
+        display: none;
     }
     ul {
         position: relative;
@@ -247,9 +242,14 @@ button:active {
         text-align: left;
         top: 55px;
     }
+    #about .container {
+        margin-top: 0px !important;
+        outline: 1px dashed tomato;
+    }
     #illus {
         display: none; /* temporary */
     }
+
 
     /* Mobile Menu */
     .menuContainer {
@@ -257,13 +257,21 @@ button:active {
         position: absolute;
         top: 0;
         width: 100%;
-        height: 100vh;
         -webkit-backdrop-filter: blur(3px) brightness(70%);
         backdrop-filter: blur(3px) brightness(70%);
         z-index: 100;
     }
+    .up {
+        height: 75px;
+    }
+    .down {
+        height: 100vh;
+    }
+    .off {
+        display: none;
+    }
     .menu {
-      outline: 1px solid orange;
+      /* outline: 1px solid orange; */
         margin: 0 auto;
         max-width: 600px;
         color: #40D3E6;
@@ -277,7 +285,7 @@ button:active {
         background-image: url(../img/menu_nubbin.png);
         margin: 0 auto;
         width: 250px;
-        height: 10%;
+        height: 73px;
         background-size: 25%;
         background-repeat: no-repeat;
         background-position: top;
@@ -300,10 +308,19 @@ button:active {
         width: 30px;
         height: 35px;
         z-index: 255;
-        top: 89%;
         left: 50%;
         transform: translate(-50%);
         font-size: 26pt;
         cursor: pointer;
     }
+    .default {
+        top: 78%;
+    }
+    .dropped {
+        top: 89%;
+        transform: rotate(180deg);
+    }
 }
+
+
+/* top: 89%; */
