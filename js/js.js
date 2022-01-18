@@ -5,7 +5,7 @@ $(".chevron").on("click", function(){
         $("h2").removeClass("off");
         $("ul").removeClass("off");
         $(".chevron").removeClass("default").addClass("dropped");
-        console.log("help... ;_;")
+        console.log("help... ;_;");
     };
     else {
         $(".menuContainer").removeClass("down").addClass("up");
