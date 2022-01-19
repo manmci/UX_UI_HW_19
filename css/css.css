@@ -73,6 +73,18 @@ ul {
     width: 100%;
     height: 100%;
 }
+.content {
+    max-width: 90%;
+    margin: 15px auto;
+}
+.zine {
+    background-image: url(../img/zine_th.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Links & Buttons */
 
@@ -112,10 +124,7 @@ button:active {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
-.container {
-    max-width: 90%;
-    margin: 15px auto;
-}
+
 
 /* Grid */
 
@@ -167,16 +176,26 @@ button:active {
     grid-row: 1 / 3;
     grid-column: 1;
 }
-/* 
-#illustration .container {
+
+#illus .content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     gap: 5px;
 }
+.thumbnail {
+    grid-row: 1;
+    grid-column: 1 / 3;
+}
+.zineBlurb {
+    grid-row: 1;
+    grid-column: 3 / 6;
+}
+
+
 #contact .container {
 }
-*/
+
 
 /* Tablet */
 

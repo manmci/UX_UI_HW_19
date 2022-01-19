@@ -15,3 +15,7 @@ $(".chevron").on("click", function(){
         $(".chevron i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
     };
 });
+// $(".chevron").on("click", function(){
+//     $(".menuContainer").slideToggle(fast);
+// });
+// I'll have to change the way my CSS is set up to use slideToggle, but I think I might try it.
